@@ -117,13 +117,13 @@ export default function PresalePage() {
   // }
 
   return (
-    <div className="relative w-screen h-screen">
-      <Image
-        src="/projectimg/presale.png"
-        alt="Fullscreen Image"
-        fill
-        className="object-cover"
-      />
-    </div>
+    <div className="relative w-full h-[80vh] max-w-4xl mx-auto">
+    <Image
+      src="/projectimg/presale.png"
+      alt="Large Responsive Image"
+      layout="fill"
+      className="object-cover"
+    />
+  </div>
   )
 }
