@@ -1,7 +1,7 @@
 'use client'
 
 // 'use effect' are removed due to the counter removed 
-import React, { useState } from 'react'
+// import React, { useState } from 'react'
 import Image from 'next/image'
 // import { motion } from 'framer-motion'
 // import CtaSection from '@/components/Ctasectionl'
