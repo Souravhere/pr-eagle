@@ -2,12 +2,12 @@
 
 // 'use effect' are removed due to the counter removed 
 import React, { useState } from 'react'
-import Image from 'next/image'
-import { motion } from 'framer-motion'
-import CtaSection from '@/components/Ctasectionl'
-import HowToBuyEagles from '@/components/StepCard'
-import ContractAddress from '@/components/ContractAddress'
-import Tokenomics from '@/components/Tokenomics'
+// import Image from 'next/image'
+// import { motion } from 'framer-motion'
+// import CtaSection from '@/components/Ctasectionl'
+// import HowToBuyEagles from '@/components/StepCard'
+// import ContractAddress from '@/components/ContractAddress'
+// import Tokenomics from '@/components/Tokenomics'
 
 // this const is commented for the animate number
 // const AnimatedNumber = ({ value }: { value: number }) => {
