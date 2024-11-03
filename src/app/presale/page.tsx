@@ -1,7 +1,7 @@
 'use client'
 
 // 'use effect' are removed due to the counter removed 
-// import React, { useState } from 'react'
+import React, { useState } from 'react'
 import Image from 'next/image'
 // import { motion } from 'framer-motion'
 // import CtaSection from '@/components/Ctasectionl'
@@ -115,15 +115,18 @@ export default function PresalePage() {
   //   const solanaValue = parseFloat(value) * 0.003
   //   setSolanaAmount(solanaValue.toFixed(2))
   // }
-
+  const [isLoading, setLoading] = useState(true);
   return (
-    <div className="relative w-full h-[80vh] max-w-4xl mx-auto">
-    <Image
-      src="/projectimg/presale.png"
-      alt="Large Responsive Image"
-      layout="fill"
-      className="object-cover"
-    />
-  </div>
+    <div className="relative w-full h-[80vh] max-w-4xl mx-auto overflow-hidden">
+      <Image
+        src="/projectimg/presale.png"
+        alt="Large Responsive Image"
+        layout="fill"
+        className={`object-cover transition-all duration-700 ease-in-out transform ${
+          isLoading ? 'scale-110 opacity-0 blur-xl' : 'scale-100 opacity-100 blur-0'
+        }`}
+        onLoadingComplete={() => setLoading(false)}
+      />
+    </div>
   )
 }
