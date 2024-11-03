@@ -117,12 +117,12 @@ export default function PresalePage() {
   // }
 
   return (
-    <div className="relative w-full h-[50vh] max-w-2xl mx-auto">
+    <div className="relative w-screen h-screen">
       <Image
         src="/projectimg/presale.png"
-        alt="Responsive Image"
-        layout="fill"
-        className="object-contain"
+        alt="Fullscreen Image"
+        fill
+        className="object-cover"
       />
     </div>
   )
