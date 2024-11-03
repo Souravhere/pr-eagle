@@ -2,7 +2,7 @@
 
 // 'use effect' are removed due to the counter removed 
 import React, { useState } from 'react'
-// import Image from 'next/image'
+import Image from 'next/image'
 // import { motion } from 'framer-motion'
 // import CtaSection from '@/components/Ctasectionl'
 // import HowToBuyEagles from '@/components/StepCard'
@@ -37,39 +37,39 @@ import React, { useState } from 'react'
 //   )
 // }
 
-const Button = ({ children, onClick, className = '' }: { children: React.ReactNode; onClick?: () => void; className?: string }) => {
-  return (
-    <button
-      onClick={onClick}
-      className={`px-4 py-2 rounded-md font-semibold transition-colors ${className}`}
-    >
-      {children}
-    </button>
-  )
-}
+// const Button = ({ children, onClick, className = '' }: { children: React.ReactNode; onClick?: () => void; className?: string }) => {
+//   return (
+//     <button
+//       onClick={onClick}
+//       className={`px-4 py-2 rounded-md font-semibold transition-colors ${className}`}
+//     >
+//       {children}
+//     </button>
+//   )
+// }
 
-const Input = ({ type, value, onChange, placeholder, className = '' }: { type: string; value: string; onChange: (e: React.ChangeEvent<HTMLInputElement>) => void; placeholder: string; className?: string }) => {
-  return (
-    <input
-      type={type}
-      value={value}
-      onChange={onChange}
-      placeholder={placeholder}
-      className={`bg-transparent border-none outline-none ${className}`}
-    />
-  )
-}
+// const Input = ({ type, value, onChange, placeholder, className = '' }: { type: string; value: string; onChange: (e: React.ChangeEvent<HTMLInputElement>) => void; placeholder: string; className?: string }) => {
+//   return (
+//     <input
+//       type={type}
+//       value={value}
+//       onChange={onChange}
+//       placeholder={placeholder}
+//       className={`bg-transparent border-none outline-none ${className}`}
+//     />
+//   )
+// }
 
-const Progress = ({ value }: { value: number }) => {
-  return (
-    <div className="w-full bg-gray-700 rounded-full h-4">
-      <div
-        className="bg-orange-500 h-4 rounded-full"
-        style={{ width: `${value}%` }}
-      />
-    </div>
-  )
-}
+// const Progress = ({ value }: { value: number }) => {
+//   return (
+//     <div className="w-full bg-gray-700 rounded-full h-4">
+//       <div
+//         className="bg-orange-500 h-4 rounded-full"
+//         style={{ width: `${value}%` }}
+//       />
+//     </div>
+//   )
+// }
 
 export default function PresalePage() {
 //   const [timeLeft, setTimeLeft] = useState({
@@ -78,9 +78,9 @@ export default function PresalePage() {
 //     minutes: 59,
 //     seconds: 59
 //   })
-  const [progress,] = useState(2)
-  const [solanaAmount, setSolanaAmount] = useState('')
-  const [eaglesAmount, setEaglesAmount] = useState('')
+  // const [progress,] = useState(2)
+  // const [solanaAmount, setSolanaAmount] = useState('')
+  // const [eaglesAmount, setEaglesAmount] = useState('')
 
 //  counter funcnality will be commented wait for the launch 
 //   useEffect(() => {
@@ -102,19 +102,19 @@ export default function PresalePage() {
 //     return () => clearInterval(timer)
 //   }, [])
 
-  const handleSolanaInput = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const value = e.target.value
-    setSolanaAmount(value)
-    const eaglesValue = parseFloat(value) * (1 / 0.003)
-    setEaglesAmount(eaglesValue.toFixed(2))
-  }
+  // const handleSolanaInput = (e: React.ChangeEvent<HTMLInputElement>) => {
+  //   const value = e.target.value
+  //   setSolanaAmount(value)
+  //   const eaglesValue = parseFloat(value) * (1 / 0.003)
+  //   setEaglesAmount(eaglesValue.toFixed(2))
+  // }
 
-  const handleEaglesInput = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const value = e.target.value
-    setEaglesAmount(value)
-    const solanaValue = parseFloat(value) * 0.003
-    setSolanaAmount(solanaValue.toFixed(2))
-  }
+  // const handleEaglesInput = (e: React.ChangeEvent<HTMLInputElement>) => {
+  //   const value = e.target.value
+  //   setEaglesAmount(value)
+  //   const solanaValue = parseFloat(value) * 0.003
+  //   setSolanaAmount(solanaValue.toFixed(2))
+  // }
 
   return (
     <div className="relative w-full h-[50vh] max-w-2xl mx-auto">
