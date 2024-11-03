@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /api/            # Disallow access to the API directory
+Disallow: /private/        # Disallow access to the private directory
+Allow: /                   # Allow all other pages
+
+Sitemap: https://www.eagles.wtf/sitemap.xml

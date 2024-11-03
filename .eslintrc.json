@@ -1,0 +1,10 @@
+{
+  "extends": ["next/core-web-vitals", "next/typescript"],
+  "rules": {
+    // Enforces including dependencies in `useEffect` dependency arrays
+    "react-hooks/exhaustive-deps": "warn",
+    
+    // Discourage the use of `any` type and require specifying more specific types
+    "@typescript-eslint/no-explicit-any": ["warn", { "ignoreRestArgs": true }]
+  }
+}
